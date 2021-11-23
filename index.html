@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  
+    <title>Calculadora</title>
+</head>
+
+<body>
+  <div>
+    <table>
+      <h1>Calculadora</h1>
+      <tr>
+        <td colspan="4">
+         <input type="text" id="result" placeholder="0" readonly></input>
+        </td>
+      
+      </tr>
+      <tr>
+        <td><input type="button" id="clearAll" class="test" value="AC" onclick="operation(this);"></input></td>
+        <td><input type="button" id="clear" class="test" value="<-" onclick="operation(this);"></input></td>
+        <td><input type="button" id="porcentaje" class="test" value="%" onclick="operation(this);"></input></td>
+        <td><input type="button" id="division" class="test" value="÷" onclick="operation(this);"></input></td>
+      </tr>
+        <tr>
+        <td><input type="button" value="7" id="siete" class="test1" onclick="operation(this);"</td>
+        <td><input type="button" id="ocho" value="8" class="test1" onclick="operation(this);"></input></td>
+        <td><input type="button" id="nueve" value="9" class="test1" onclick="operation(this);"></input></td>
+        <td><input type="button" id="multiplicacion" class="test" value="x" onclick="operation(this);"></input></td>
+      </tr>
+      <tr>
+        <td><input type="button" id="cuatro" value="4" class="test1" onclick="operation(this);"></input></td>
+        <td><input type="button" id="cinco" value="5" class="test1" onclick="operation(this);"></input></td>
+        <td><input type="button" id="seis" value="6" class="test1" onclick="operation(this);"></input></td>
+        <td><input type="button" id="resta" class="test" value="-" onclick="operation(this);"></input></td>
+      </tr>
+      <tr>
+        <td><input type="button" id="uno" value="1" class="test1" onclick="operation(this);"></input></td>
+        <td><input type="button" id="dos" value="2" class="test1" onclick="operation(this);"></input></td>
+        <td><input type="button" id="tres" value="3" class="test1" onclick="operation(this);"></input></td>
+        <td><input type="button" id="suma" value="+" class="test" onclick="operation(this);"></input></td>
+      </tr>
+      <tr>
+        <td><input type="button" id="borrar" value="π" class="test1"></input></td>
+        <td><input type="button" id="cero" value="0" class="test1" onclick="operation(this);"></input></td>
+        <td><input type="button" id="coma" value="," class="test1" onclick="operation(this);"></input></td>
+        <td><input type="button" id="igual" class="test2" value="=" onclick="operation(this);"></input></td>
+      </tr>
+    </table>
+  </div>
+  <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>

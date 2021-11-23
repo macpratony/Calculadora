@@ -1,0 +1,50 @@
+.test1 {
+  width: 90px;
+  height: 90px;
+  border-radius: 6px;
+  background: burlywood;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 40px;
+}
+
+.test {
+  width: 90px;
+  height: 90px;
+  border-radius: 6px;
+  text-align: center;
+  color: orange;
+  background: black;
+  font-size: 40px;
+}
+
+body {
+  background: black;
+}
+
+.test2 {
+      width: 80px;
+      height: 80px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: orange;
+      color: white;
+      font-size: 40px;
+}
+
+#result {
+  width: 93vw;
+  height: 15vh;
+  background: black;
+  border-radius: 3px;
+  color: #FFFFFF;
+  text-align: end;
+  font-size: 60px;
+  font-weight: bold;
+  border-style: none;
+}
+
+table {
+  margin: 0 auto;
+}
