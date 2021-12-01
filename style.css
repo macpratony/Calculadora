@@ -53,3 +53,13 @@ h1 {
   font-size: 40px;
   color: orchid;
 }
+
+#cero {
+  width: 100%;
+  height: 90px;
+  border-radius: 6px;
+  background: burlywood;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 40px;
+}

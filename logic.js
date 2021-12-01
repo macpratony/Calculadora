@@ -24,7 +24,13 @@ const operation = (com) => {
     }
     salidaPantalla.value = aux;
   }else{
-    salidaPantalla.value += valorBoton;
+    if(salidaPantalla.value.length > 0){
+     salidaPantalla.value += valorBoton;
+    }else if(isNaN(valorBoton)){
+     salidaPantalla.value = '';
+    }else{
+      salidaPantalla.value += valorBoton;
+    }
   }
   
 }
