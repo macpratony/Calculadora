@@ -1,46 +1,30 @@
+let salidaPantalla = document.getElementById('result');
 
 const operation = (com) => {
   let teclaId = com.id;
-  let salidaPantalla = document.getElementById('result');
+  
   let valorBoton = document.getElementById(teclaId).value;
-  let aux1 = 0;
-  let aux2 = 0;
-  let resultado = 0;
- 
- /* switch (tecla) {
-    
-    case "suma":
-      
-      
-      break;
-      
-    case "resta":
-      
-      break;
-      
-    case "multiplicacion":
-      
-      break;
-      
-    case "division":
-      
-      break;
-      
-    case "clearAll":
-      
-      break;
-      
-    case "clear":
-      
-      break;
-      
-    case "porcentaje":
-      
-      break;
-      
-    default:
-      total.value += valor;
-    break;
-  }*/
+  
+    if(teclaId === '='){
+      if(salidaPantalla.value.length > 0){ 
+        salidaPantalla.value = eval(salidaPantalla.value);
+        if (salidaPantalla.value == 0) {
+          salidaPantalla.value = '';
+        }
+      if(salidaPantalla.length > 12){
+          salidaPantalla.value = eval(salidaPantalla.value).toFixed(12);
+      }
+    }
+  }else if(teclaId === 'clearAll'){
+    salidaPantalla.value = '';
+  }else if(teclaId === 'clear'){
+    let aux = '';
+    for(let i =0; i< salidaPantalla.value.length-1 ; i++){
+       aux += salidaPantalla.value[i];
+    }
+    salidaPantalla.value = aux;
+  }else{
+    salidaPantalla.value += valorBoton;
+  }
   
 }
